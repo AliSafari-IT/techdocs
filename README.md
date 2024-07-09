@@ -1,41 +1,84 @@
-# Website
+# DevKnowledgeBase
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+## Overview
 
-### Installation
+DevKnowledgeBase is a comprehensive platform to explore, learn, and innovate in the field of software development. It offers a rich collection of tutorials, blogs, and resources aimed at developers of all levels.
 
-```
-$ yarn
-```
+## Project Structure
 
-### Local Development
+- **Documentation**: Organized and accessible through the sidebar.
+- **Blog**: Regularly updated with insightful posts.
+- **Code & Create**: A dedicated section for coding challenges and creative projects.  [ToDo]
+- **Idea Hub**: A place to share and explore new ideas. [ToDo]
+- **About**: Information about the project and team.
+- **Contact**: Ways to get in touch.
 
-```
-$ yarn start
-```
+## Configuration
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+### Project Details
 
-### Build
+- **Title**: DevKnowledgeBase
+- **Tagline**: Explore, Learn, Innovate
+- **URL**: [https://asafarim.be](https://asafarim.be)
+- **Base URL**: /techdocs/
+- **Organization Name**: asafarim
+- **Project Name**: DevDocsCentral
+- **Favicon**: `img/favicon.ico`
 
-```
-$ yarn build
-```
+### Localization
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+- **Default Locale**: en
+- **Supported Locales**: en
 
-### Deployment
+### Presets
 
-Using SSH:
+The project uses the classic preset with the following customizations:
 
-```
-$ USE_SSH=true yarn deploy
-```
+- **Docs**: Sidebar configuration in `sidebars.ts`. Pages are editable via GitHub links.
+- **Blog**: Reading time displayed. Editable via GitHub links.
+- **Theme**: Custom CSS located at `src/css/custom.css`.
 
-Not using SSH:
+### Theme Configuration
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
+- **Navbar**:
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+  - Title: DevDocsCentral
+  - Logo: `img/logo.svg`
+  - Items:
+    - TechTutorialVault (Documentation)
+    - DevDocsCentral (Home)
+    - Blog
+    - Code & Create
+    - Idea Hub
+    - About
+    - Contact
+    - GitHub (External link)
+
+- **Footer**:
+
+  - Style: dark
+  - Links:
+    - TechDocsHub:
+      - Tutorial Vault
+    - Community:
+      - Stack Overflow
+      - X (formerly Twitter)
+    - More:
+      - Blog
+      - Code & Create
+      - GitHub
+
+- **Prism**:
+  - Theme: GitHub theme
+  - Dark Theme: Dracula theme
+
+## Development
+
+### Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/AliSafari-IT/techdocs.git
+   cd DevDocsCentral
+   ```
